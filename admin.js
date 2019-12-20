@@ -1,7 +1,7 @@
 (function(){
     console.log('Loaded JS!')
 
-    const ably = new Ably.Realtime('1Mp0GA.sk52-w:0wBfApEvp7mnSI49')
+    const ably = new Ably.Realtime('<API_KEY>')
     const channel = ably.channels.get('chat-window')
 
     channel.subscribe('div-hide', message => {
